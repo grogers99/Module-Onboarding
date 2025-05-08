@@ -12,18 +12,33 @@
       <h1>Product Pick</h1>
     </header>
     <main>
-      <form>
+      <form action="/product-pick-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <p>
+          <label for="colour">Colour:</label>
+          <select id="colour" name="colour">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </p>
         <!-- write your html here-->
         <!-- 
           what is the customer's name?
           what is the customer's email?
           what colour should the t-shirt be?
           what size?-->
+        <p>
+          <button type="submit">Submit</button>
+        </p>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By GR</h2>
     </footer>
   </body>
 </html>
